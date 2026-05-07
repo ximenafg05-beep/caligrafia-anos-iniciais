@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compra Confirmada — Caligrafia para Anos Iniciais</title>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'TUA_PIXEL_ID_AQUI');
+fbq('track', 'Purchase', {value: 6.49, currency: 'USD'});
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #E8F8F5 0%, #EBF5FB 50%, #FEF9E7 100%);
+    color: #2C3E50;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 28px;
+    padding: 50px 36px;
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+  }
+
+  .success-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+    animation: pop 0.6s ease;
+  }
+  @keyframes pop {
+    0% { transform: scale(0); }
+    80% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+  h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(28px, 5vw, 42px);
+    color: #2ECC71;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 17px;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  .subtitle span { color: #2ECC71; font-weight: 900; }
+
+  .instrucoes {
+    background: #F8F9FA;
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin: 24px 0;
+    text-align: left;
+  }
+  .instrucoes h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #2C3E50;
+    text-align: center;
+  }
+  .passo {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #EBEBEB;
+    font-size: 15px;
+    font-weight: 600;
+    color: #444;
+  }
+  .passo:last-child { border: none; }
+  .passo-num {
+    width: 30px;
+    height: 30px;
+    background: #2ECC71;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .entrega-box {
+    background: #FFF9E6;
+    border: 2px solid #FFD700;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  .entrega-box p { font-weight: 700; font-size: 15px; color: #555; margin-bottom: 6px; }
+  .entrega-box strong { color: #2C3E50; font-size: 16px; }
+
+  .suporte {
+    font-size: 13px;
+    color: #999;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .suporte a { color: #4ECDC4; font-weight: 800; }
+
+  .confetti-msg {
+    font-size: 28px;
+    margin: 16px 0 6px;
+    animation: bounce 1.5s infinite;
+  }
+  @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="success-icon">✅</div>
+  
+  <h1>COMPRA REALIZADA<br>COM SUCESSO!</h1>
+  
+  <div class="confetti-msg">🎉🎊🎉</div>
+  
+  <p class="subtitle">
+    Parabéns! <span>Você fez uma ótima escolha</span> para o desenvolvimento da escrita do seu filho ou aluno.
+  </p>
+
+  <div class="instrucoes">
+    <h3>📧 Como acessar seu kit:</h3>
+    <div class="passo">
+      <div class="passo-num">1</div>
+      <span>Verifique seu e-mail — o acesso foi enviado imediatamente após a confirmação do pagamento</span>
+    </div>
+    <div class="passo">
+      <div class="passo-num">2</div>
+      <span>Cheque também sua caixa de <strong>Spam/Lixo eletrônico</strong> caso não encontre na caixa de entrada</span>
+    </div>
+    <div class="passo">
+      <div class="passo-num">3</div>
+      <span>Clique no link do e-mail para acessar e baixar todos os seus arquivos PDF</span>
+    </div>
+    <div class="passo">
+      <div class="passo-num">4</div>
+      <span>Imprima, edite e comece a usar hoje mesmo! 📄✏️</span>
+    </div>
+  </div>
+
+  <div class="entrega-box">
+    <p>⏱️ Prazo para receber o e-mail:</p>
+    <strong>Até 48 horas — mas geralmente chega em minutos!</strong>
+  </div>
+
+  <p class="suporte">
+    Algum problema? Entre em contato:<br>
+    <a href="mailto:suporte@seudominio.com">suporte@seudominio.com</a><br>
+    Respondemos em até 24 horas úteis.
+  </p>
+</div>
+
+</body>
+</html>
