@@ -3,62 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Compra Confirmada! — Obrigado</title>
+<title>Compra Confirmada! — Kit Caligrafia para Anos Iniciais</title>
+
+<!-- Facebook Pixel -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','27004038235857209');
-fbq('track','PageView');
-fbq('track','Purchase',{value:6.49,currency:'USD'});
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '27004038235857209');
+fbq('track', 'PageView');
+fbq('track', 'Purchase', { value: 6.49, currency: 'USD' });
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=27004038235857209&ev=PageView&noscript=1"/></noscript>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
+:root{--verde:#2ECC71;--verde-escuro:#27AE60;--amarelo:#FFD700;--coral:#FF6B6B;--escuro:#2C3E50;--cinza:#F8F9FA;}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Nunito',sans-serif;background:linear-gradient(135deg,#E8FFFE,#FFF9E6);color:#2C3E50;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;}
-.container{max-width:620px;background:#fff;border-radius:28px;padding:48px 36px;text-align:center;box-shadow:0 12px 48px rgba(0,0,0,.12);}
-.check-icon{font-size:72px;margin-bottom:20px;animation:zoomIn .5s;}
-@keyframes zoomIn{from{transform:scale(0)}to{transform:scale(1)}}
-h1{font-family:'Fredoka One',cursive;font-size:clamp(28px,5vw,42px);color:#2ECC71;margin-bottom:16px;}
-.subhead{font-size:18px;color:#555;font-weight:600;margin-bottom:32px;line-height:1.6;}
-.proximos-passos{background:#F8F9FA;border-radius:16px;padding:28px 24px;margin-bottom:28px;text-align:left;}
-.proximos-passos h2{font-family:'Fredoka One',cursive;font-size:22px;color:#2C3E50;margin-bottom:18px;text-align:center;}
-.proximos-passos ol{padding-left:20px;}
-.proximos-passos li{padding:10px 0;font-size:15px;font-weight:600;color:#444;line-height:1.6;}
-.proximos-passos li strong{color:#2ECC71;}
-.info-box{background:#FFF9E6;border-left:5px solid #FFD700;padding:20px;border-radius:12px;margin-bottom:28px;text-align:left;}
-.info-box p{font-size:14px;color:#555;font-weight:600;line-height:1.7;margin-bottom:10px;}
-.info-box p:last-child{margin-bottom:0;}
-.info-box strong{color:#2C3E50;}
-.footer-msg{font-size:14px;color:#999;font-weight:600;}
-.footer-msg span{color:#2ECC71;font-weight:800;}
+body{font-family:'Nunito',sans-serif;color:var(--escuro);background:linear-gradient(160deg,#E8FFFE,#FFF9E6);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 16px;}
+.card{background:white;border-radius:24px;padding:48px 36px;max-width:560px;width:100%;box-shadow:0 24px 60px rgba(0,0,0,0.1);text-align:center;}
+.check-icon{font-size:4rem;margin-bottom:16px;animation:bounceIn 0.6s ease;}
+@keyframes bounceIn{0%{transform:scale(0)}60%{transform:scale(1.2)}100%{transform:scale(1)}}
+h1{font-family:'Fredoka One',sans-serif;font-size:2rem;color:var(--verde-escuro);margin-bottom:8px;}
+.subtitulo{font-size:1rem;color:#555;margin-bottom:28px;line-height:1.6;}
+.prazo-box{background:linear-gradient(135deg,#FFF9E6,#FFF3CD);border:2px solid var(--amarelo);border-radius:16px;padding:20px 24px;margin-bottom:24px;}
+.prazo-box strong{display:block;font-size:1rem;font-weight:800;color:var(--escuro);margin-bottom:8px;}
+.prazo-box p{font-size:0.88rem;color:#666;line-height:1.6;}
+.prazo-horas{font-family:'Fredoka One',sans-serif;font-size:1.8rem;color:var(--coral);}
+.o-que-receber{background:var(--cinza);border-radius:14px;padding:20px;margin-bottom:24px;text-align:left;}
+.o-que-receber strong{display:block;font-size:0.9rem;font-weight:800;margin-bottom:12px;text-align:center;}
+.receber-list{list-style:none;}
+.receber-list li{display:flex;gap:10px;padding:7px 0;font-size:0.86rem;border-bottom:1px solid #EEF0F2;}
+.receber-list li:last-child{border-bottom:none;}
+.contato-box{background:#F0FFF4;border:1px solid var(--verde);border-radius:14px;padding:16px 20px;margin-bottom:20px;}
+.contato-box p{font-size:0.85rem;color:#555;line-height:1.6;}
+.contato-box a{color:var(--verde-escuro);font-weight:700;text-decoration:none;}
+.garantia-tag{display:inline-flex;align-items:center;gap:8px;background:#E8F8F0;border-radius:30px;padding:8px 20px;font-size:0.82rem;font-weight:700;color:var(--verde-escuro);}
 </style>
 </head>
 <body>
-<div class="container">
+<div class="card">
   <div class="check-icon">✅</div>
   <h1>Compra Confirmada!</h1>
-  <p class="subhead">Parabéns! Seu Kit de Caligrafia está a caminho. Você receberá um email com instruções de acesso em instantes.</p>
-  <div class="proximos-passos">
-    <h2>📋 Próximos Passos</h2>
-    <ol>
-      <li><strong>Verifique seu email</strong> — em até 5 minutos você receberá suas credenciais de acesso.</li>
-      <li><strong>Acesse o material</strong> — faça login na área de membros e baixe todos os PDFs.</li>
-      <li><strong>Comece a usar</strong> — imprima as atividades e veja os resultados na escrita dos alunos!</li>
-    </ol>
+  <p class="subtitulo">Obrigada pela sua compra do <strong>Kit Caligrafia para Anos Iniciais — 1° ao 5° Ano</strong>. Você fez uma ótima escolha!</p>
+
+  <div class="prazo-box">
+    <strong>📦 Importante — Prazo de Entrega</strong>
+    <p>Seu material completo estará disponível em até <span class="prazo-horas">48 horas</span>.<br>Você receberá um email assim que os arquivos forem liberados na sua área de membros. Não precisa fazer nada — estamos preparando tudo com cuidado para você.</p>
   </div>
-  <div class="info-box">
-    <p><strong>📧 Email não chegou?</strong> Verifique a caixa de spam ou promoções. Se ainda não receber, entre em contato: <strong>contato-entrenos@outlook.com</strong></p>
-    <p><strong>💬 Precisa de ajuda?</strong> Estamos à disposição para qualquer dúvida!</p>
+
+  <div class="o-que-receber">
+    <strong>🎁 O que você vai receber:</strong>
+    <ul class="receber-list">
+      <li>✏️ Kit Caligrafia Completo 1° ao 5° Ano — 200–250 páginas</li>
+      <li>📖 Bônus 1 — Fichas de Leitura por Ano 1°–5°</li>
+      <li>👨‍👧 Bônus 2 — Guia para Pais: Como Ajudar em Casa</li>
+      <li>📝 Bônus 3 — Atividades de Revisão por Bimestre</li>
+      <li>✅ Bônus 4 — Checklist BNCC do Professor</li>
+    </ul>
   </div>
-  <p class="footer-msg">🛡️ <span>Garantia de 7 dias ativa.</span> Use o material tranquila. Se não gostar, devolvemos tudo.</p>
+
+  <div class="contato-box">
+    <p>Precisa de ajuda? Fale com a gente:<br>📧 <a href="mailto:contato-entrenos@outlook.com">contato-entrenos@outlook.com</a><br><br>Respondemos em até 24 horas nos dias úteis.</p>
+  </div>
+
+  <div class="garantia-tag">🛡️ Garantia de 7 dias ativa — 100% do seu investimento protegido</div>
 </div>
 </body>
 </html>
